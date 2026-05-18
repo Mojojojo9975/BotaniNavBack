@@ -16,7 +16,7 @@ This repository currently contains the initial project structure, dependency lis
 ## Prerequisites
 
 - Python 3.11+ (recommended)
-- Docker + Docker Compose (for local DB/Redis)
+- Docker + Docker Compose (v2 `docker compose` or v1 `docker-compose`)
 
 ## Setup
 
@@ -28,6 +28,7 @@ This repository currently contains the initial project structure, dependency lis
 3. Start local services:
    ```bash
    docker compose up -d
+   # or: docker-compose up -d
    ```
 
 ## Running tests
@@ -38,4 +39,4 @@ pytest -q
 
 ## Notes
 
-- `requirements.txt` is encoded as UTF-16 LE in the current repository state.
+- `requirements.txt` is encoded as UTF-16 LE in the current repository state, which can be incompatible with some Python tooling that expects UTF-8.
