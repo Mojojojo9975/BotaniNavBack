@@ -36,7 +36,3 @@ This repository currently contains the initial project structure, dependency lis
 ```bash
 pytest -q
 ```
-
-## Notes
-
-- `requirements.txt` is encoded as UTF-16 LE in the current repository state, which can be incompatible with some Python tooling that expects UTF-8.
